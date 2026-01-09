@@ -1,0 +1,146 @@
+/* Travel Search Bar Styles */
+
+.travel-search-bar {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.travel-hero-section {
+    position: relative;
+}
+
+.travel-hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Search Box */
+.travel-hero-section .card {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.travel-hero-section .input-group-lg .form-control,
+.travel-hero-section .input-group-lg .btn {
+    height: 60px;
+    font-size: 1.1rem;
+}
+
+.travel-hero-section .input-group-text {
+    border-radius: 15px 0 0 15px;
+    padding: 0 20px;
+}
+
+.travel-hero-section .btn-primary {
+    border-radius: 0 15px 15px 0;
+    padding: 0 30px;
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Advanced Search */
+#advancedSearchContainer {
+    animation: slideDown 0.5s ease forwards;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 100;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+#advancedSearchContainer.show {
+    max-height: 2000px;
+    opacity: 1;
+}
+
+/* Rating Stars */
+.rating-stars {
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating-star {
+    transition: color 0.2s ease;
+    margin-right: 2px;
+}
+
+.rating-star:hover,
+.rating-star.active {
+    color: #ffc107;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .travel-hero-section {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        min-height: auto;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .travel-hero-section .input-group-lg .form-control,
+    .travel-hero-section .input-group-lg .btn {
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .travel-hero-section .input-group {
+        flex-direction: column;
+    }
+    
+    .travel-hero-section .input-group-text,
+    .travel-hero-section .form-control,
+    .travel-hero-section .btn-primary {
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .travel-hero-section .input-group-text {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .travel-hero-section .btn-primary {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+
+
+
+
+
+

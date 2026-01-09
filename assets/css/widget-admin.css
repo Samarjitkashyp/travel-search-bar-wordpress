@@ -1,0 +1,93 @@
+/* Widget Admin Styles */
+.travel-search-widget-form {
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.travel-search-widget-form .widget-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+}
+
+.travel-search-widget-form .widget-section h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.travel-search-widget-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.travel-search-widget-form input[type="text"],
+.travel-search-widget-form input[type="color"],
+.travel-search-widget-form textarea,
+.travel-search-widget-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.travel-search-widget-form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.travel-search-widget-form .color-picker {
+    width: 50px;
+    height: 40px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.travel-search-widget-form .image-upload-container {
+    margin-top: 10px;
+}
+
+.travel-search-widget-form .image-preview {
+    margin: 10px 0;
+}
+
+.travel-search-widget-form .image-preview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.travel-search-widget-form .button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.travel-search-widget-form .description {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .travel-search-widget-form {
+        padding: 5px;
+    }
+    
+    .travel-search-widget-form .widget-section {
+        padding: 10px;
+    }
+}
